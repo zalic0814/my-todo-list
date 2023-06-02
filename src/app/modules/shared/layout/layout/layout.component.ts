@@ -18,9 +18,9 @@ import { Subject, map, takeUntil } from 'rxjs';
   styleUrls: ['./layout.component.scss'],
 })
 export class LayoutComponent implements OnDestroy {
-  menus: { name: string; routerLink: string }[] = [
-    { name: 'All Tasks', routerLink: '' },
-    { name: 'Calendar', routerLink: '/calendar' },
+  menus: { name: string; routerLink: string; icon: string }[] = [
+    { name: 'All Tasks', routerLink: '', icon: 'list' },
+    { name: 'Calendar', routerLink: '/calendar', icon: 'calendar_today' },
   ];
 
   destroy$ = new Subject<void>();

@@ -19,11 +19,15 @@
     >
       <mat-nav-list>
         <a
-          mat-list-item
           *ngFor="let nav of menus"
+          mat-list-item
           [routerLink]="nav.routerLink"
-          >{{ nav.name }}</a
         >
+          <div class="flex flex-row align-middle gap-2">
+            <mat-icon>{{ nav.icon }}</mat-icon>
+            {{ nav.name }}
+          </div>
+        </a>
       </mat-nav-list>
     </mat-sidenav>
 
