@@ -6,7 +6,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  BrowserAnimationsModule,
+  NoopAnimationsModule,
+} from '@angular/platform-browser/animations';
 
 import { LayoutComponent } from './layout/layout.component';
 
@@ -21,6 +24,7 @@ import { LayoutComponent } from './layout/layout.component';
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
+    NoopAnimationsModule,
   ],
   exports: [LayoutComponent],
 })
