@@ -5,6 +5,6 @@ export interface Task {
   status: TaskStatus;
   createdAt: number;
   updatedAt: number;
-  locateAt: Date | number | null;
+  locateAt: Date | null;
   description: string | null;
 }

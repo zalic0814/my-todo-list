@@ -1,0 +1,6 @@
+:host ::ng-deep .action-bar {
+  @apply flex gap-2;
+  .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+  }
+}

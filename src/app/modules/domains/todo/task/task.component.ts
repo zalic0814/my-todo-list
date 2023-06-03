@@ -51,7 +51,7 @@ export class TaskComponent implements AfterViewInit, OnDestroy {
 
   formGroup = new FormGroup({
     description: new FormControl(''),
-    locateAt: new FormControl<Date | number | null>(null),
+    locateAt: new FormControl<Date | null>(null),
   });
 
   get descriptionCtrl() {

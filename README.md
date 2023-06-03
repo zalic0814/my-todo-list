@@ -30,8 +30,8 @@
 - [X] Create a new task and save
 - [X] Update an existed task
 - [X] Delete an existed task
-- [ ] Search tasks by descriptions
-- [ ] Sort tasks by date
+- [X] Search tasks by descriptions
+- [X] Sort tasks by date
 - [X] RWD layout
 - [ ] A11y (some shortcut and focus for better UX)
 

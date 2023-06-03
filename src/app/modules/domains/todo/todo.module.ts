@@ -8,11 +8,13 @@ import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
 
 import { TodoRoutingModule } from './todo-routing.module';
 import { AllTaskComponent } from './all-task/all-task.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { TaskComponent } from './task/task.component';
+
 @NgModule({
   declarations: [AllTaskComponent, CalendarComponent, TaskComponent],
   imports: [
@@ -27,6 +29,7 @@ import { TaskComponent } from './task/task.component';
     MatCardModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatSelectModule,
   ],
 })
 export class TodoModule {}

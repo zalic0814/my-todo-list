@@ -4,10 +4,21 @@
     Add Task
   </button>
 
-  <div class="flex gap-2">
-    <mat-form-field>
-      <mat-label>Filter description</mat-label>
-      <input matInput type="text" />
+  <div class="action-bar">
+    <mat-form-field appearance="outline">
+      <input
+        matInput
+        type="text"
+        [formControl]="filterCtrl"
+        placeholder="Filter description"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-select [formControl]="sortCtrl">
+        <mat-option value="desc"> Newest to Oldest </mat-option>
+        <mat-option value="asc"> Oldest to Newest </mat-option>
+      </mat-select>
     </mat-form-field>
   </div>
 </div>
