@@ -6,6 +6,19 @@
 - `npm run start`
 - `http://localhost:4200/`
 
+## codebase architecture
+
+- `src/app/modules/domains`: Modules with routings.
+- `src/app/modules/shared`: Shared pure modules.
+- `src/app/shared`: Shared services, models, utils, etc., for across modules.
+- `src/assets`: Static resources and custom shared scss.
+
+## Test coverage
+
+- `npm run test -- --no-watch --code-coverage`
+- use browser to open `/coverage/my-todo-app/index.html`
+- go to `app/shared/services` in the reporter and we can see the coverage of `task-agent.service.ts` is 100%.
+
 ## Roadmap
 
 ### Foundations
@@ -47,8 +60,4 @@
 
 - [ ] All tasks component
 - [ ] Task component
-- [ ] Task agent
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [X] Task agent service

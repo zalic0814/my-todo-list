@@ -29,6 +29,7 @@ export class TaskAgentService {
   updateTask(id: number, payload: UpdateTaskPayload): void {
     const allTasks = this._allTasks$.getValue();
     const index = allTasks.findIndex((t) => t.id === id);
+    if (index < 0) return;
     const updatedTask = this._updateTask(allTasks[index], payload);
     allTasks[index] = updatedTask;
     this._allTasks$.next([...allTasks]);
