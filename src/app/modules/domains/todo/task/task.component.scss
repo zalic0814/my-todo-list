@@ -1,0 +1,22 @@
+.task-status {
+  @apply border rounded py-1 px-3 text-sm;
+
+  &.draft {
+    @apply border-blue-400 text-blue-400 bg-blue-100;
+  }
+
+  &.completed,
+  &.uncompleted {
+    @apply cursor-pointer;
+  }
+
+  &.completed {
+    @apply border-green-400 text-green-400 bg-green-100;
+    @apply hover:bg-green-200;
+  }
+
+  &.uncompleted {
+    @apply border-red-400 text-red-400 bg-red-100;
+    @apply hover:bg-red-200;
+  }
+}

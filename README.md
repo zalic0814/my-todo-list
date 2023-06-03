@@ -1,27 +1,54 @@
 # MyTodoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
-
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- `npm install`
+- `npm run start`
+- `http://localhost:4200/`
 
-## Code scaffolding
+## Roadmap
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Foundations
 
-## Build
+- [X] Eslint & Formatter
+- [X] Tailwinds
+- [X] Angular Material
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Basic UI/UX
+
+- [X] Header
+- [X] Navbar
+- [X] RWD Navbar
+
+### All tasks UI/UX
+
+- [X] routing
+- [X] Task component
+- [X] Change task status
+- [X] Modify task date
+- [X] Modify task description
+- [X] Create a new task and save
+- [X] Update an existed task
+- [X] Delete an existed task
+- [ ] Search tasks by descriptions
+- [ ] Sort tasks by date
+- [X] RWD layout
+- [ ] A11y (some shortcut and focus for better UX)
+
+### Calendar view UI/UX
+
+- [X] Routing
+- [ ] Calendar component
+- [ ] Highlight date with tasks
+- [ ] Different Highlight color for tasks status
+- [ ] Detail page while clicking a date on the calendar
+
+### Unit test
+
+- [ ] All tasks component
+- [ ] Task component
+- [ ] Task agent
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

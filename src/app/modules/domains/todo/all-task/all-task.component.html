@@ -1,1 +1,26 @@
-<p>all-task works!</p>
+<div class="flex items-center justify-between">
+  <button mat-stroked-button color="primary" (click)="onAddDraftTask()">
+    <mat-icon>add</mat-icon>
+    Add Task
+  </button>
+
+  <div class="flex gap-2">
+    <mat-form-field>
+      <mat-label>Filter description</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+  </div>
+</div>
+
+<div class="flex flex-wrap gap-2">
+  <app-task
+    *ngIf="draftTask"
+    [task]="draftTask"
+    (taskCancelled)="onClearDraft()"
+    (taskSaved)="onClearDraft()"
+  ></app-task>
+  <app-task
+    *ngFor="let task of allTasks$ | async; trackBy: taskTrackBy"
+    [task]="task"
+  ></app-task>
+</div>
